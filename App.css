@@ -1,0 +1,317 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 20px;
+  max-width: 935px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 935px;
+}
+
+/* Phone Mockup Styles */
+.phone-mockup {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-frame {
+  width: 454px;
+  height: auto;
+  max-width: 100%;
+}
+
+.phone-screenshots {
+  position: absolute;
+  top: 27px;
+  right: 18px;
+  width: 250px;
+  height: 538px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.instagram-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* Login Section Styles */
+.login-section {
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form-container {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 40px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram-logo {
+  margin-bottom: 32px;
+}
+
+.instagram-logo svg {
+  width: 175px;
+  height: 51px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-form .form-input {
+  width: 100%;
+  padding: 9px 8px 7px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 5px 9px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 18px;
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #dbdbdb;
+  z-index: 0;
+}
+
+.divider span {
+  background: white;
+  padding: 0 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.forgot-password {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  color: #00376b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Sign Up Container */
+.signup-container {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-link {
+  color: #0095f6;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* App Download Section */
+.app-download {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app-download p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.download-btn img {
+  height: 40px;
+  width: auto;
+}
+
+/* Footer Styles */
+.footer {
+  background: #fafafa;
+  padding: 0 20px 52px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-links button {
+  font-size: 12px;
+  color: #8e8e8e;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.footer-links button:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.language-selector select {
+  background: none;
+  border: none;
+  color: #8e8e8e;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 875px) {
+  .phone-mockup {
+    display: none;
+  }
+
+  .content-wrapper {
+    justify-content: center;
+  }
+
+  .login-section {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-container {
+    padding: 0;
+  }
+
+  .login-form-container {
+    border: none;
+    background: transparent;
+    padding: 40px 20px 20px;
+  }
+
+  .signup-container {
+    border: none;
+    background: transparent;
+    padding: 20px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Enhanced button states */
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 149, 246, 0.2);
+}
+
+/* Input focus states */
+.form-input:focus {
+  border-color: #a8a8a8;
+  box-shadow: none;
+}
+
+/* Hover effects */
+.download-btn:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
