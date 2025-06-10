@@ -19,14 +19,14 @@ function App() {
           {/* Left Column - Phone Mockup */}
           <div className="phone-mockup">
             <img
-              src="https://ugc.same-assets.com/RWiP0JnshCuMhO97IetMlFE-b9LTEml1.jpeg"
-              alt="Instagram phone mockup"
+              src=""
+              alt="
               className="phone-frame"
             />
             <div className="phone-screenshots">
               <img
-                src="https://i.blogs.es/89a175/ig/650_1200.jpeg"
-                alt="Instagram feed"
+                src=""
+                alt=""
                 className="instagram-screenshot"
               />
             </div>
